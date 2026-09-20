@@ -1,0 +1,142 @@
+{
+  "name": "live-interativa-nexivolive",
+  "globIgnorePaths": [
+    "**/*.md"
+  ],
+  "tree": {
+    "$className": "DataModel",
+    "Workspace": {
+      "$className": "Workspace",
+      "$ignoreUnknownInstances": true,
+      "$properties": {
+        "StreamingEnabled": false
+      },
+      "Cenario": {
+        "$path": "src/Workspace/Cenario.model.json"
+      },
+      "Camera": {
+        "$className": "Camera",
+        "$properties": {
+          "CFrame": [
+            0,
+            64,
+            215,
+            1,
+            0,
+            0,
+            0,
+            0.9798,
+            0.19996,
+            0,
+            -0.19996,
+            0.9798
+          ],
+          "FieldOfView": 70
+        }
+      }
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$ignoreUnknownInstances": true,
+      "$properties": {
+        "Technology": "ShadowMap",
+        "Brightness": 2.6,
+        "ClockTime": 14,
+        "GeographicLatitude": -8,
+        "Ambient": [
+          0.46,
+          0.455,
+          0.44
+        ],
+        "OutdoorAmbient": [
+          0.56,
+          0.555,
+          0.54
+        ],
+        "GlobalShadows": true,
+        "EnvironmentDiffuseScale": 1,
+        "EnvironmentSpecularScale": 0.35,
+        "ExposureCompensation": -0.05,
+        "ShadowSoftness": 0.62
+      },
+      "Ceu": {
+        "$className": "Sky",
+        "$properties": {
+          "StarCount": 0,
+          "CelestialBodiesShown": false,
+          "SkyboxBk": "rbxassetid://6444884337",
+          "SkyboxDn": "rbxassetid://6444884785",
+          "SkyboxFt": "rbxassetid://6444884337",
+          "SkyboxLf": "rbxassetid://6444884337",
+          "SkyboxRt": "rbxassetid://6444884337",
+          "SkyboxUp": "rbxassetid://6412503613"
+        }
+      },
+      "Ar": {
+        "$className": "Atmosphere",
+        "$properties": {
+          "Density": 0.18,
+          "Offset": 0.1,
+          "Color": [
+            0.85,
+            0.84,
+            0.82
+          ],
+          "Decay": [
+            0.75,
+            0.74,
+            0.72
+          ],
+          "Glare": 0.08,
+          "Haze": 0.6
+        }
+      },
+      "Brilho": {
+        "$className": "BloomEffect",
+        "$properties": {
+          "Intensity": 0.45,
+          "Size": 20,
+          "Threshold": 1.9
+        }
+      },
+      "Cores": {
+        "$className": "ColorCorrectionEffect",
+        "$properties": {
+          "Saturation": -0.04,
+          "Contrast": 0.08,
+          "Brightness": 0.01,
+          "TintColor": [
+            1,
+            0.996,
+            0.988
+          ]
+        }
+      }
+    },
+    "HttpService": {
+      "$className": "HttpService",
+      "$properties": {
+        "HttpEnabled": true
+      }
+    },
+    "SoundService": {
+      "$className": "SoundService",
+      "$properties": {
+        "AmbientReverb": "Arena"
+      }
+    },
+    "ReplicatedStorage": {
+      "$path": "src/ReplicatedStorage"
+    },
+    "ServerScriptService": {
+      "$path": "src/ServerScriptService"
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$path": "src/StarterPlayerScripts"
+      }
+    }
+  }
+}
