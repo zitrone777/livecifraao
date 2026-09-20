@@ -1,0 +1,6998 @@
+{
+  "className": "Folder",
+  "children": [
+    {
+      "name": "Chao",
+      "className": "Folder",
+      "children": [
+        {
+          "name": "ChaoDoMundo",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              1600.0,
+              12.0,
+              1600.0
+            ],
+            "CFrame": [
+              0.0,
+              -14.0,
+              100.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": true,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.5922,
+              0.5765,
+              0.5529
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "PisoDoEstudio",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              200.0,
+              8.0,
+              340.0
+            ],
+            "CFrame": [
+              0.0,
+              -4.6,
+              100.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": true,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7686,
+              0.7529,
+              0.7294
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth",
+            "Reflectance": 0.04
+          }
+        },
+        {
+          "name": "Plataforma",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              150.0,
+              1.2,
+              190.0
+            ],
+            "CFrame": [
+              0.0,
+              -0.6,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": true,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.4784,
+              0.3451,
+              0.2392
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              -70.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              -56.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              -42.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco3",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              -28.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco4",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              -14.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco5",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              0.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco6",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              14.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco7",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              28.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco8",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              42.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco9",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              56.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Sulco10",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.5,
+              1.0,
+              190.0
+            ],
+            "CFrame": [
+              70.0,
+              -0.8,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "BordaAcentoFrente",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              150.0,
+              1.5,
+              0.8
+            ],
+            "CFrame": [
+              0.0,
+              -0.4,
+              125.4,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.1765,
+              0.4353
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "BordaAcentoEsq",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.8,
+              1.5,
+              190.0
+            ],
+            "CFrame": [
+              -74.6,
+              -0.4,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.1765,
+              0.4353
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "BordaAcentoDir",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.8,
+              1.5,
+              190.0
+            ],
+            "CFrame": [
+              74.6,
+              -0.4,
+              30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.1765,
+              0.4353
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ciclorama",
+      "className": "Folder",
+      "children": [
+        {
+          "name": "Cyc0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              4.0,
+              -96.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.8392,
+              0.8235,
+              0.7961
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              12.0,
+              -96.05917159763314,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.8283384615384615,
+              0.8126461538461539,
+              0.7855384615384615
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              20.0,
+              -96.23668639053254,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.817476923076923,
+              0.8017923076923077,
+              0.7749769230769231
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc3",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              28.0,
+              -96.53254437869822,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.8066153846153845,
+              0.7909384615384616,
+              0.7644153846153846
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc4",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              36.0,
+              -96.94674556213018,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7957538461538461,
+              0.7800846153846154,
+              0.7538538461538462
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc5",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              44.0,
+              -97.47928994082841,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7848923076923077,
+              0.7692307692307693,
+              0.7432923076923077
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc6",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              52.0,
+              -98.1301775147929,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7740307692307692,
+              0.7583769230769231,
+              0.7327307692307693
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc7",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              60.0,
+              -98.89940828402366,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7631692307692307,
+              0.747523076923077,
+              0.7221692307692308
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc8",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              68.0,
+              -99.78698224852072,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7523076923076922,
+              0.7366692307692307,
+              0.7116076923076924
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc9",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              76.0,
+              -100.79289940828403,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7414461538461538,
+              0.7258153846153846,
+              0.7010461538461539
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc10",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              84.0,
+              -101.9171597633136,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7305846153846154,
+              0.7149615384615384,
+              0.6904846153846155
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc11",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              92.0,
+              -103.15976331360946,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7197230769230769,
+              0.7041076923076923,
+              0.679923076923077
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc12",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              100.0,
+              -104.52071005917159,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7088615384615384,
+              0.6932538461538462,
+              0.6693615384615386
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Cyc13",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              420.0,
+              8.2,
+              6.0
+            ],
+            "CFrame": [
+              0.0,
+              108.0,
+              -106.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.698,
+              0.6824,
+              0.6588
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatEsq0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              -150.0,
+              8.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.8392,
+              0.8235,
+              0.7961
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatEsq1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              -150.0,
+              16.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.8109599999999999,
+              0.79528,
+              0.76864
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatEsq2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              -150.0,
+              24.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.78272,
+              0.76706,
+              0.7411800000000001
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatEsq3",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              -150.0,
+              32.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7544799999999999,
+              0.73884,
+              0.71372
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatEsq4",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              -150.0,
+              40.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.72624,
+              0.71062,
+              0.6862600000000001
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatEsq5",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              -150.0,
+              48.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.698,
+              0.6824,
+              0.6588
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatDir0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              150.0,
+              8.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.8392,
+              0.8235,
+              0.7961
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatDir1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              150.0,
+              16.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.8109599999999999,
+              0.79528,
+              0.76864
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatDir2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              150.0,
+              24.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.78272,
+              0.76706,
+              0.7411800000000001
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatDir3",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              150.0,
+              32.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.7544799999999999,
+              0.73884,
+              0.71372
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatDir4",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              150.0,
+              40.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.72624,
+              0.71062,
+              0.6862600000000001
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "CycLatDir5",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              6.0,
+              8.2,
+              200.0
+            ],
+            "CFrame": [
+              150.0,
+              48.0,
+              -10.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.698,
+              0.6824,
+              0.6588
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ParedeDeLED",
+      "className": "Folder",
+      "children": [
+        {
+          "name": "PainelInferior",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              148.0,
+              14.0,
+              4.0
+            ],
+            "CFrame": [
+              0.0,
+              11.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.0392,
+              0.0431,
+              0.0706
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "Telao",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              148.0,
+              14.0,
+              4.0
+            ],
+            "CFrame": [
+              0.0,
+              25.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.0392,
+              0.0431,
+              0.0706
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          },
+          "children": [
+            {
+              "name": "Tela",
+              "className": "SurfaceGui",
+              "properties": {
+                "Face": "Back",
+                "LightInfluence": 0,
+                "PixelsPerStud": 26,
+                "SizingMode": "PixelsPerStud",
+                "ZIndexBehavior": "Sibling"
+              },
+              "children": [
+                {
+                  "name": "Fundo",
+                  "className": "Frame",
+                  "properties": {
+                    "Size": {
+                      "UDim2": [
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          1,
+                          0
+                        ]
+                      ]
+                    },
+                    "BackgroundColor3": [
+                      0.0392,
+                      0.0431,
+                      0.0706
+                    ],
+                    "BorderSizePixel": 0
+                  },
+                  "children": [
+                    {
+                      "name": "FioDoTopo",
+                      "className": "Frame",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              1,
+                              0
+                            ],
+                            [
+                              0.035,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0,
+                              0
+                            ],
+                            [
+                              0,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundColor3": [
+                          1.0,
+                          0.1765,
+                          0.4353
+                        ],
+                        "BorderSizePixel": 0
+                      }
+                    },
+                    {
+                      "name": "CartaoChamada",
+                      "className": "Frame",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              0.22,
+                              0
+                            ],
+                            [
+                              0.88,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0.39,
+                              0
+                            ],
+                            [
+                              0.0,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundTransparency": 1,
+                        "Visible": true
+                      },
+                      "children": [
+                        {
+                          "name": "Linha1",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  1.0,
+                                  0
+                                ],
+                                [
+                                  0.28,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.0,
+                                  0
+                                ],
+                                [
+                                  0.09,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "COMENTE SEU",
+                            "TextColor3": [
+                              1.0,
+                              1.0,
+                              1.0
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamBold"
+                          }
+                        },
+                        {
+                          "name": "Linha2",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  1.0,
+                                  0
+                                ],
+                                [
+                                  0.28,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.0,
+                                  0
+                                ],
+                                [
+                                  0.38,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "NICK DO ROBLOX",
+                            "TextColor3": [
+                              1.0,
+                              0.839,
+                              0.251
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamBold"
+                          }
+                        },
+                        {
+                          "name": "Linha3",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  1.0,
+                                  0
+                                ],
+                                [
+                                  0.24,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.0,
+                                  0
+                                ],
+                                [
+                                  0.69,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "E APAREÇA AQUI",
+                            "TextColor3": [
+                              1.0,
+                              1.0,
+                              1.0
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamMedium"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CartaoPresente",
+                      "className": "Frame",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              0.22,
+                              0
+                            ],
+                            [
+                              0.88,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0.39,
+                              0
+                            ],
+                            [
+                              0.0,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundTransparency": 1,
+                        "Visible": false
+                      },
+                      "children": [
+                        {
+                          "name": "Nome",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  1.0,
+                                  0
+                                ],
+                                [
+                                  0.3,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.0,
+                                  0
+                                ],
+                                [
+                                  0.07,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              1.0,
+                              0.839,
+                              0.251
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamBold"
+                          }
+                        },
+                        {
+                          "name": "Efeito",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  1.0,
+                                  0
+                                ],
+                                [
+                                  0.28,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.0,
+                                  0
+                                ],
+                                [
+                                  0.39,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              0.35,
+                              0.85,
+                              1.0
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamBold"
+                          }
+                        },
+                        {
+                          "name": "Preco",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  1.0,
+                                  0
+                                ],
+                                [
+                                  0.2,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.0,
+                                  0
+                                ],
+                                [
+                                  0.71,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              1.0,
+                              0.42,
+                              0.55
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamMedium"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Presente1",
+                      "className": "Frame",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              0.24,
+                              0
+                            ],
+                            [
+                              0.34,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0.13,
+                              0
+                            ],
+                            [
+                              0.1,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundColor3": [
+                          0.11,
+                          0.12,
+                          0.17
+                        ],
+                        "BackgroundTransparency": 0.25,
+                        "BorderSizePixel": 0,
+                        "Visible": false
+                      },
+                      "children": [
+                        {
+                          "name": "Redondo",
+                          "className": "UICorner",
+                          "properties": {
+                            "CornerRadius": {
+                              "UDim": [
+                                0.22,
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "name": "Nome",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  0.92,
+                                  0
+                                ],
+                                [
+                                  0.42,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.04,
+                                  0
+                                ],
+                                [
+                                  0.06,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              1.0,
+                              0.839,
+                              0.251
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamBold"
+                          }
+                        },
+                        {
+                          "name": "Efeito",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  0.92,
+                                  0
+                                ],
+                                [
+                                  0.38,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.04,
+                                  0
+                                ],
+                                [
+                                  0.52,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              0.35,
+                              0.85,
+                              1.0
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamMedium"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Presente2",
+                      "className": "Frame",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              0.24,
+                              0
+                            ],
+                            [
+                              0.34,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0.63,
+                              0
+                            ],
+                            [
+                              0.1,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundColor3": [
+                          0.11,
+                          0.12,
+                          0.17
+                        ],
+                        "BackgroundTransparency": 0.25,
+                        "BorderSizePixel": 0,
+                        "Visible": false
+                      },
+                      "children": [
+                        {
+                          "name": "Redondo",
+                          "className": "UICorner",
+                          "properties": {
+                            "CornerRadius": {
+                              "UDim": [
+                                0.22,
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "name": "Nome",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  0.92,
+                                  0
+                                ],
+                                [
+                                  0.42,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.04,
+                                  0
+                                ],
+                                [
+                                  0.06,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              1.0,
+                              0.839,
+                              0.251
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamBold"
+                          }
+                        },
+                        {
+                          "name": "Efeito",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  0.92,
+                                  0
+                                ],
+                                [
+                                  0.38,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.04,
+                                  0
+                                ],
+                                [
+                                  0.52,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              0.35,
+                              0.85,
+                              1.0
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamMedium"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Presente3",
+                      "className": "Frame",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              0.24,
+                              0
+                            ],
+                            [
+                              0.34,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0.13,
+                              0
+                            ],
+                            [
+                              0.5,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundColor3": [
+                          0.11,
+                          0.12,
+                          0.17
+                        ],
+                        "BackgroundTransparency": 0.25,
+                        "BorderSizePixel": 0,
+                        "Visible": false
+                      },
+                      "children": [
+                        {
+                          "name": "Redondo",
+                          "className": "UICorner",
+                          "properties": {
+                            "CornerRadius": {
+                              "UDim": [
+                                0.22,
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "name": "Nome",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  0.92,
+                                  0
+                                ],
+                                [
+                                  0.42,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.04,
+                                  0
+                                ],
+                                [
+                                  0.06,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              1.0,
+                              0.839,
+                              0.251
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamBold"
+                          }
+                        },
+                        {
+                          "name": "Efeito",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  0.92,
+                                  0
+                                ],
+                                [
+                                  0.38,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.04,
+                                  0
+                                ],
+                                [
+                                  0.52,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              0.35,
+                              0.85,
+                              1.0
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamMedium"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Presente4",
+                      "className": "Frame",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              0.24,
+                              0
+                            ],
+                            [
+                              0.34,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0.63,
+                              0
+                            ],
+                            [
+                              0.5,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundColor3": [
+                          0.11,
+                          0.12,
+                          0.17
+                        ],
+                        "BackgroundTransparency": 0.25,
+                        "BorderSizePixel": 0,
+                        "Visible": false
+                      },
+                      "children": [
+                        {
+                          "name": "Redondo",
+                          "className": "UICorner",
+                          "properties": {
+                            "CornerRadius": {
+                              "UDim": [
+                                0.22,
+                                0
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "name": "Nome",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  0.92,
+                                  0
+                                ],
+                                [
+                                  0.42,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.04,
+                                  0
+                                ],
+                                [
+                                  0.06,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              1.0,
+                              0.839,
+                              0.251
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamBold"
+                          }
+                        },
+                        {
+                          "name": "Efeito",
+                          "className": "TextLabel",
+                          "properties": {
+                            "Size": {
+                              "UDim2": [
+                                [
+                                  0.92,
+                                  0
+                                ],
+                                [
+                                  0.38,
+                                  0
+                                ]
+                              ]
+                            },
+                            "Position": {
+                              "UDim2": [
+                                [
+                                  0.04,
+                                  0
+                                ],
+                                [
+                                  0.52,
+                                  0
+                                ]
+                              ]
+                            },
+                            "BackgroundTransparency": 1,
+                            "Text": "",
+                            "TextColor3": [
+                              0.35,
+                              0.85,
+                              1.0
+                            ],
+                            "TextScaled": true,
+                            "TextXAlignment": "Center",
+                            "Font": "GothamMedium"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PainelSuperior",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              148.0,
+              24.0,
+              4.0
+            ],
+            "CFrame": [
+              0.0,
+              44.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.0392,
+              0.0431,
+              0.0706
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          },
+          "children": [
+            {
+              "name": "TelaSuperior",
+              "className": "SurfaceGui",
+              "properties": {
+                "Face": "Back",
+                "LightInfluence": 0,
+                "PixelsPerStud": 12,
+                "SizingMode": "PixelsPerStud",
+                "ZIndexBehavior": "Sibling"
+              },
+              "children": [
+                {
+                  "name": "Fundo",
+                  "className": "Frame",
+                  "properties": {
+                    "Size": {
+                      "UDim2": [
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          1,
+                          0
+                        ]
+                      ]
+                    },
+                    "BackgroundColor3": [
+                      0.0392,
+                      0.0431,
+                      0.0706
+                    ],
+                    "BorderSizePixel": 0
+                  },
+                  "children": [
+                    {
+                      "name": "PontoAoVivo",
+                      "className": "Frame",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              0.022,
+                              0
+                            ],
+                            [
+                              0.075,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0.335,
+                              0
+                            ],
+                            [
+                              0.175,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundColor3": [
+                          1.0,
+                          0.1765,
+                          0.4353
+                        ],
+                        "BorderSizePixel": 0
+                      },
+                      "children": [
+                        {
+                          "name": "Redondo",
+                          "className": "UICorner",
+                          "properties": {
+                            "CornerRadius": {
+                              "UDim": [
+                                0.5,
+                                0
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "AoVivo",
+                      "className": "TextLabel",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              0.3,
+                              0
+                            ],
+                            [
+                              0.11,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0.372,
+                              0
+                            ],
+                            [
+                              0.16,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundTransparency": 1,
+                        "Text": "AO VIVO",
+                        "TextColor3": [
+                          1.0,
+                          1.0,
+                          1.0
+                        ],
+                        "TextScaled": true,
+                        "TextXAlignment": "Left",
+                        "Font": "GothamBold"
+                      }
+                    },
+                    {
+                      "name": "Marca",
+                      "className": "TextLabel",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              0.9,
+                              0
+                            ],
+                            [
+                              0.34,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0.05,
+                              0
+                            ],
+                            [
+                              0.36,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundTransparency": 1,
+                        "Text": "SUA SKIN NO PALCO",
+                        "TextColor3": [
+                          1.0,
+                          1.0,
+                          1.0
+                        ],
+                        "TextScaled": true,
+                        "TextXAlignment": "Center",
+                        "Font": "GothamBold"
+                      }
+                    },
+                    {
+                      "name": "Assinatura",
+                      "className": "TextLabel",
+                      "properties": {
+                        "Size": {
+                          "UDim2": [
+                            [
+                              0.9,
+                              0
+                            ],
+                            [
+                              0.15,
+                              0
+                            ]
+                          ]
+                        },
+                        "Position": {
+                          "UDim2": [
+                            [
+                              0.05,
+                              0
+                            ],
+                            [
+                              0.73,
+                              0
+                            ]
+                          ]
+                        },
+                        "BackgroundTransparency": 1,
+                        "Text": "COMENTE • GANHE DESTAQUE • DANCE",
+                        "TextColor3": [
+                          1.0,
+                          0.839,
+                          0.251
+                        ],
+                        "TextScaled": true,
+                        "TextXAlignment": "Center",
+                        "Font": "GothamMedium"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FrisoDivisor0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              150.0,
+              0.7,
+              4.6
+            ],
+            "CFrame": [
+              0.0,
+              18.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.1765,
+              0.4353
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoDivisor1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              150.0,
+              0.7,
+              4.6
+            ],
+            "CFrame": [
+              0.0,
+              32.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.1765,
+              0.4353
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "MolduraTopo",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              156.0,
+              3.0,
+              5.0
+            ],
+            "CFrame": [
+              0.0,
+              57.5,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "MolduraBase",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              156.0,
+              3.0,
+              5.0
+            ],
+            "CFrame": [
+              0.0,
+              2.5,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "MolduraEsq",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              3.0,
+              52.0,
+              5.0
+            ],
+            "CFrame": [
+              -75.5,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "MolduraDir",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              3.0,
+              52.0,
+              5.0
+            ],
+            "CFrame": [
+              75.5,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "PainelMadeiraEsq",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              46.0,
+              58.0,
+              4.0
+            ],
+            "CFrame": [
+              -101.0,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.4784,
+              0.3451,
+              0.2392
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoPainelEsq0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.6,
+              54.0,
+              4.4
+            ],
+            "CFrame": [
+              -80.0,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoPainelEsq1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.6,
+              54.0,
+              4.4
+            ],
+            "CFrame": [
+              -90.5,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoPainelEsq2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.6,
+              54.0,
+              4.4
+            ],
+            "CFrame": [
+              -101.0,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoPainelEsq3",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.6,
+              54.0,
+              4.4
+            ],
+            "CFrame": [
+              -111.5,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoPainelEsq4",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.6,
+              54.0,
+              4.4
+            ],
+            "CFrame": [
+              -122.0,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcentoLateralEsq",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.8,
+              52.0,
+              4.6
+            ],
+            "CFrame": [
+              -77.6,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.1765,
+              0.4353
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "PainelMadeiraDir",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              46.0,
+              58.0,
+              4.0
+            ],
+            "CFrame": [
+              101.0,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.4784,
+              0.3451,
+              0.2392
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoPainelDir0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.6,
+              54.0,
+              4.4
+            ],
+            "CFrame": [
+              80.0,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoPainelDir1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.6,
+              54.0,
+              4.4
+            ],
+            "CFrame": [
+              90.5,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoPainelDir2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.6,
+              54.0,
+              4.4
+            ],
+            "CFrame": [
+              101.0,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoPainelDir3",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.6,
+              54.0,
+              4.4
+            ],
+            "CFrame": [
+              111.5,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FrisoPainelDir4",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.6,
+              54.0,
+              4.4
+            ],
+            "CFrame": [
+              122.0,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcentoLateralDir",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              0.8,
+              52.0,
+              4.6
+            ],
+            "CFrame": [
+              77.6,
+              30.0,
+              -74.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.1765,
+              0.4353
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Luzes",
+      "className": "Folder",
+      "children": [
+        {
+          "name": "TorreEsqFundo",
+          "className": "TrussPart",
+          "properties": {
+            "Size": [
+              2.0,
+              74.0,
+              2.0
+            ],
+            "CFrame": [
+              -92.0,
+              37.0,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ]
+          }
+        },
+        {
+          "name": "TorreEsqFrente",
+          "className": "TrussPart",
+          "properties": {
+            "Size": [
+              2.0,
+              74.0,
+              2.0
+            ],
+            "CFrame": [
+              -92.0,
+              37.0,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ]
+          }
+        },
+        {
+          "name": "TorreDirFundo",
+          "className": "TrussPart",
+          "properties": {
+            "Size": [
+              2.0,
+              74.0,
+              2.0
+            ],
+            "CFrame": [
+              92.0,
+              37.0,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ]
+          }
+        },
+        {
+          "name": "TorreDirFrente",
+          "className": "TrussPart",
+          "properties": {
+            "Size": [
+              2.0,
+              74.0,
+              2.0
+            ],
+            "CFrame": [
+              92.0,
+              37.0,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ]
+          }
+        },
+        {
+          "name": "VigaFundo",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              184.0,
+              3.0,
+              3.0
+            ],
+            "CFrame": [
+              0.0,
+              75.5,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Metal",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "VigaFrente",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              184.0,
+              3.0,
+              3.0
+            ],
+            "CFrame": [
+              0.0,
+              75.5,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Metal",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "VigaEsq",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              3.0,
+              3.0,
+              132.0
+            ],
+            "CFrame": [
+              -92.0,
+              74.5,
+              0.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Metal",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "VigaDir",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              3.0,
+              3.0,
+              132.0
+            ],
+            "CFrame": [
+              92.0,
+              74.5,
+              0.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Metal",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFrente0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              -78.0,
+              71.0,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFrente0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              -78.0,
+              69.3,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.9255,
+              0.8157
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFrente1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              -52.0,
+              71.0,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFrente1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              -52.0,
+              69.3,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.9255,
+              0.8157
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFrente2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              -26.0,
+              71.0,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFrente2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              -26.0,
+              69.3,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.9255,
+              0.8157
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFrente3",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              0.0,
+              71.0,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFrente3",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              0.0,
+              69.3,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.9255,
+              0.8157
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFrente4",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              26.0,
+              71.0,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFrente4",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              26.0,
+              69.3,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.9255,
+              0.8157
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFrente5",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              52.0,
+              71.0,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFrente5",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              52.0,
+              69.3,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.9255,
+              0.8157
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFrente6",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              78.0,
+              71.0,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFrente6",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              78.0,
+              69.3,
+              66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              1.0,
+              0.9255,
+              0.8157
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFundo0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              -70.0,
+              71.0,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFundo0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              -70.0,
+              69.3,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              0.8392,
+              0.9059,
+              1.0
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFundo1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              -35.0,
+              71.0,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFundo1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              -35.0,
+              69.3,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              0.8392,
+              0.9059,
+              1.0
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFundo2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              0.0,
+              71.0,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFundo2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              0.0,
+              69.3,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              0.8392,
+              0.9059,
+              1.0
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFundo3",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              35.0,
+              71.0,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFundo3",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              35.0,
+              69.3,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              0.8392,
+              0.9059,
+              1.0
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "SoftboxFundo4",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              11.0,
+              3.0,
+              8.0
+            ],
+            "CFrame": [
+              70.0,
+              71.0,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "SmoothPlastic",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "LuzFundo4",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              10.0,
+              0.6,
+              7.0
+            ],
+            "CFrame": [
+              70.0,
+              69.3,
+              -66.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Neon",
+            "Color": [
+              0.8392,
+              0.9059,
+              1.0
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Set",
+      "className": "Folder",
+      "children": [
+        {
+          "name": "AcusticoEsq00",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              6.0,
+              -30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq01",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              6.0,
+              -19.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq02",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              6.0,
+              -9.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq03",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              6.0,
+              1.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq04",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              6.0,
+              12.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq10",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              16.5,
+              -30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq11",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              16.5,
+              -19.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq12",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              16.5,
+              -9.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq13",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              16.5,
+              1.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq14",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              16.5,
+              12.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq20",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              27.0,
+              -30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq21",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              27.0,
+              -19.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq22",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              27.0,
+              -9.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq23",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              27.0,
+              1.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq24",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              27.0,
+              12.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq30",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              37.5,
+              -30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq31",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              37.5,
+              -19.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq32",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              37.5,
+              -9.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq33",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              37.5,
+              1.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoEsq34",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              -96.0,
+              37.5,
+              12.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "PraticavelEsq",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              26.0,
+              6.0,
+              46.0
+            ],
+            "CFrame": [
+              -92.0,
+              3.0,
+              78.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.4784,
+              0.3451,
+              0.2392
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "PraticavelTopoEsq",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              26.6,
+              1.2,
+              46.6
+            ],
+            "CFrame": [
+              -92.0,
+              5.8,
+              78.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "VasoEsq",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              7.0,
+              8.0,
+              7.0
+            ],
+            "CFrame": [
+              -84.0,
+              4.0,
+              108.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.5922,
+              0.5765,
+              0.5529
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FolhaEsq0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              7.2,
+              9.0
+            ],
+            "CFrame": [
+              -84.0,
+              9.0,
+              108.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Grass",
+            "Color": [
+              0.2902,
+              0.4157,
+              0.2667
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FolhaEsq1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              7.0,
+              5.6000000000000005,
+              7.0
+            ],
+            "CFrame": [
+              -84.0,
+              14.0,
+              108.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Grass",
+            "Color": [
+              0.2902,
+              0.4157,
+              0.2667
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FolhaEsq2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              4.5,
+              3.6,
+              4.5
+            ],
+            "CFrame": [
+              -84.0,
+              18.0,
+              108.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Grass",
+            "Color": [
+              0.2902,
+              0.4157,
+              0.2667
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir00",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              6.0,
+              -30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir01",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              6.0,
+              -19.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir02",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              6.0,
+              -9.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir03",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              6.0,
+              1.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir04",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              6.0,
+              12.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir10",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              16.5,
+              -30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir11",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              16.5,
+              -19.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir12",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              16.5,
+              -9.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir13",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              16.5,
+              1.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir14",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              16.5,
+              12.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir20",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              27.0,
+              -30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir21",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              27.0,
+              -19.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir22",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              27.0,
+              -9.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir23",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              27.0,
+              1.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir24",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              27.0,
+              12.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir30",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              37.5,
+              -30.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir31",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              37.5,
+              -19.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir32",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              37.5,
+              -9.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir33",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              37.5,
+              1.5,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.2275,
+              0.2275,
+              0.2471
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "AcusticoDir34",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              9.0,
+              1.5
+            ],
+            "CFrame": [
+              96.0,
+              37.5,
+              12.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Fabric",
+            "Color": [
+              0.3373,
+              0.3373,
+              0.3608
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "PraticavelDir",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              26.0,
+              6.0,
+              46.0
+            ],
+            "CFrame": [
+              92.0,
+              3.0,
+              78.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.4784,
+              0.3451,
+              0.2392
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "PraticavelTopoDir",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              26.6,
+              1.2,
+              46.6
+            ],
+            "CFrame": [
+              92.0,
+              5.8,
+              78.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "WoodPlanks",
+            "Color": [
+              0.3451,
+              0.2471,
+              0.1686
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "VasoDir",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              7.0,
+              8.0,
+              7.0
+            ],
+            "CFrame": [
+              84.0,
+              4.0,
+              108.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Concrete",
+            "Color": [
+              0.5922,
+              0.5765,
+              0.5529
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FolhaDir0",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              9.0,
+              7.2,
+              9.0
+            ],
+            "CFrame": [
+              84.0,
+              9.0,
+              108.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Grass",
+            "Color": [
+              0.2902,
+              0.4157,
+              0.2667
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FolhaDir1",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              7.0,
+              5.6000000000000005,
+              7.0
+            ],
+            "CFrame": [
+              84.0,
+              14.0,
+              108.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Grass",
+            "Color": [
+              0.2902,
+              0.4157,
+              0.2667
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        },
+        {
+          "name": "FolhaDir2",
+          "className": "Part",
+          "properties": {
+            "Size": [
+              4.5,
+              3.6,
+              4.5
+            ],
+            "CFrame": [
+              84.0,
+              18.0,
+              108.0,
+              1.0,
+              0,
+              0.0,
+              0,
+              1,
+              0,
+              -0.0,
+              0,
+              1.0
+            ],
+            "Anchored": true,
+            "Locked": true,
+            "CanCollide": false,
+            "CanTouch": false,
+            "CanQuery": false,
+            "CastShadow": false,
+            "Material": "Grass",
+            "Color": [
+              0.2902,
+              0.4157,
+              0.2667
+            ],
+            "TopSurface": "Smooth",
+            "BottomSurface": "Smooth"
+          }
+        }
+      ]
+    }
+  ]
+}
