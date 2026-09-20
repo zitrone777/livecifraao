@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel da Live | NexivoLive</title>
+<style>
+  :root {
+    --fundo: #0d0f14;
+    --caixa: #161a22;
+    --caixa2: #1e232d;
+    --borda: #2a303c;
+    --texto: #e8ecf3;
+    --fraco: #8b95a7;
+    --acento: #ff2d6f;
+    --ok: #4ade80;
+    --aviso: #fbbf24;
+    --erro: #ef4444;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 20px 24px 120px;
+    background: var(--fundo); color: var(--texto);
+    font: 15px/1.5 "Segoe UI", system-ui, sans-serif;
+  }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .marca { color: var(--acento); font-weight: 800; letter-spacing: .3px; }
+  h2 { font-size: 16px; margin: 0 0 12px; color: var(--acento); }
+  .sub { color: var(--fraco); margin: 0 0 18px; font-size: 14px; }
+  .grade { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); max-width: 1500px; }
+  .caixa { background: var(--caixa); border: 1px solid var(--borda); border-radius: 12px; padding: 18px; }
+  .larga { max-width: 1500px; margin-bottom: 16px; }
+  .linha { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .linha label { flex: 1; font-size: 14px; color: var(--fraco); }
+  input[type=number], input[type=text] {
+    width: 90px; background: var(--caixa2); color: var(--texto);
+    border: 1px solid var(--borda); border-radius: 6px; padding: 6px 8px; font: inherit;
+  }
+  input[type=text].largo { width: 100%; }
+  input[type=text].medio { width: 160px; }
+  select {
+    width: 100%; background: var(--caixa2); color: var(--texto);
+    border: 1px solid var(--borda); border-radius: 6px; padding: 6px 8px; font: inherit;
+  }
+  input[type=color] { width: 44px; height: 32px; border: 1px solid var(--borda); border-radius: 6px; background: none; padding: 2px; cursor: pointer; }
+  button {
+    background: var(--acento); color: #fff; border: 0; border-radius: 8px;
+    padding: 10px 16px; font: inherit; font-weight: 600; cursor: pointer;
+  }
+  button:hover { filter: brightness(1.15); }
+  button:disabled { opacity: .45; cursor: default; filter: none; }
+  button.fraco { background: var(--caixa2); color: var(--texto); border: 1px solid var(--borda); }
+  button.verde { background: #16a34a; }
+  button.perigo { background: #7f1d1d; }
+  button.mini { padding: 5px 10px; font-size: 12px; }
+  .faixa { background: var(--caixa2); border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+  .faixa .titulo { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; font-weight: 600; flex-wrap: wrap; }
+  .ponto { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+  .mini { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+  .mini > div { display: flex; flex-direction: column; gap: 3px; }
+  .mini label { font-size: 12px; color: var(--fraco); }
+  .mini input { width: 100%; }
+  .rodape {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    padding: 14px 24px; background: rgba(13,15,20,.95);
+    border-top: 1px solid var(--borda);
+    display: flex; gap: 12px; align-items: center;
+  }
+  .recado { font-size: 14px; color: var(--ok); }
+  .estado { display: flex; gap: 20px; flex-wrap: wrap; font-size: 13px; color: var(--fraco); align-items: center; }
+  .estado b { color: var(--texto); font-weight: 600; }
+  .luz { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; }
+  .dica { font-size: 13px; color: var(--fraco); margin: 0 0 14px; }
+  .testes { display: flex; flex-wrap: wrap; gap: 8px; }
+  .testes button { padding: 8px 12px; font-size: 13px; }
+
+  /* Abas. O painel cresceu de cinco caixas pra doze, e uma pagina de rolagem
+     unica obrigava a procurar o controle no meio da live -- que e' o pior
+     momento possivel pra procurar qualquer coisa. */
+  .abas { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--borda); }
+  .abas button {
+    background: none; border: 0; border-bottom: 2px solid transparent;
+    color: var(--fraco); border-radius: 0; padding: 10px 14px; font-weight: 600;
+  }
+  .abas button.ativa { color: var(--texto); border-bottom-color: var(--acento); }
+  .pagina { display: none; }
+  .pagina.ativa { display: block; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--borda); }
+  th { color: var(--fraco); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .4px; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .vazio { color: var(--fraco); font-style: italic; padding: 18px 8px; }
+
+  #logs {
+    background: #0a0c11; border: 1px solid var(--borda); border-radius: 8px;
+    padding: 10px; height: 460px; overflow-y: auto;
+    font: 12.5px/1.6 ui-monospace, Consolas, monospace;
+  }
+  #logs div { padding: 1px 0; white-space: pre-wrap; word-break: break-word; }
+  .n-info { color: #93a4bd; }
+  .n-ok { color: var(--ok); }
+  .n-aviso { color: var(--aviso); }
+  .n-erro { color: #fca5a5; }
+  .hora { color: #5a6577; }
+  .origem { color: #6b7a94; }
+
+  .cracha { display: inline-block; padding: 3px 9px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+  .c-ok { background: rgba(74,222,128,.15); color: var(--ok); }
+  .c-aviso { background: rgba(251,191,36,.15); color: var(--aviso); }
+  .c-erro { background: rgba(239,68,68,.15); color: #fca5a5; }
+  .c-neutro { background: var(--caixa2); color: var(--fraco); }
+</style>
+</head>
+<body>
+
+<h1>Painel da Live <span class="marca">NexivoLive</span></h1>
+<p class="sub">Mexa aqui durante a live. Tudo vale em poucos segundos, sem reiniciar nada.</p>
+
+<div class="caixa larga">
+  <div class="estado" id="estado">carregando...</div>
+</div>
+
+<div class="abas">
+  <button class="ativa" data-pagina="conexao">Conexão</button>
+  <button data-pagina="presentes">Presentes</button>
+  <button data-pagina="jogadores">Jogadores</button>
+  <button data-pagina="logs">Logs</button>
+  <button data-pagina="avancado">Formação e câmera</button>
+</div>
+
+<!-- ══════════════════════ CONEXÃO ══════════════════════ -->
+<div class="pagina ativa" id="pg-conexao">
+  <div class="grade">
+
+    <div class="caixa">
+      <h2>Live do TikTok</h2>
+      <p class="dica">Digite o seu @ e clique em Conectar. A ponte obedece daqui &mdash;
+        não precisa fechar janela nenhuma pra trocar de conta.</p>
+      <div class="linha">
+        <label style="flex:none">Conta (@)</label>
+        <input type="text" id="tk_conta" class="largo" placeholder="ex: nexivolive">
+      </div>
+      <div class="linha">
+        <button class="verde" id="bt_conectar" onclick="conectar(true)">Conectar</button>
+        <button class="fraco" id="bt_desconectar" onclick="conectar(false)">Desconectar</button>
+      </div>
+      <div id="tk_estado" style="margin-top:14px"></div>
+      <p class="dica" id="tk_detalhe" style="margin-top:10px"></p>
+    </div>
+
+    <div class="caixa">
+      <h2>Testar sem gastar moeda</h2>
+      <p class="dica">Dispara o efeito no jogo agora, pelo mesmo caminho de um presente
+        de verdade. Precisa de um nick do Roblox que exista &mdash; é a skin dele
+        que vai aparecer.</p>
+      <div class="linha">
+        <label style="flex:none">Nick do Roblox</label>
+        <input type="text" id="t_nick" class="largo" placeholder="ex: builderman">
+      </div>
+      <div id="t_recado" class="dica"></div>
+      <div class="testes" id="botoes_teste"></div>
+      <div class="testes" style="margin-top:8px">
+        <button class="fraco" onclick="testar('Rose',1,10)">Combo x10 de rosa</button>
+        <button class="fraco" onclick="testar('',0,1,'comentario')">Só comentário</button>
+      </div>
+    </div>
+
+    <div class="caixa">
+      <h2>Ações do espectador</h2>
+      <p class="dica">O que acontece quando alguém só comenta, curte, segue ou compartilha.
+        Curtir, seguir e compartilhar vêm <b>desligados</b>: numa live movimentada eles
+        enchem a formação sozinhos, sem ninguém digitar nada no chat.</p>
+      <div id="acoes"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════ PRESENTES ══════════════════════ -->
+<div class="pagina" id="pg-presentes">
+  <div class="caixa larga">
+    <h2>Presentes cadastrados</h2>
+    <p class="dica">Cada ficha é um presente. O que você põe aqui é <b>exatamente</b> o que
+      o jogo aplica &mdash; não existe valor escondido no código.</p>
+    <p class="dica"><b>Tamanho ao nascer</b> é com que tamanho o boneco aparece pra quem
+      ainda não está na tela. <b>Crescimento</b> é quanto ele SOMA no boneco de quem já
+      está &mdash; é isso que faz o presente seguinte da mesma pessoa valer alguma coisa.</p>
+    <p class="dica"><b>ID do TikTok</b> vence o nome. Preencha quando souber: o nome do
+      presente muda de país pra país, o ID não. A aba Logs mostra o ID de cada presente
+      que chega na sua live.</p>
+    <div id="presentes"></div>
+    <button class="fraco" onclick="novoPresente()">+ Adicionar presente</button>
+  </div>
+
+  <div class="caixa larga">
+    <h2>Presentes que chegaram nesta sessão</h2>
+    <p class="dica">Vistos ao vivo, com o ID de verdade. Clique em <b>Cadastrar</b> pra
+      criar a ficha dele já preenchida.</p>
+    <div id="vistos"><p class="vazio">Nenhum presente chegou ainda.</p></div>
+  </div>
+
+  <div class="caixa larga">
+    <h2>Faixas de preço</h2>
+    <p class="dica">A rede de segurança. Presente que você <b>não</b> cadastrou acima cai
+      aqui pelo valor em moedas &mdash; é isso que faz o kit funcionar com presente novo
+      do TikTok sem você mexer em nada.</p>
+    <div id="faixas"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════ JOGADORES ══════════════════════ -->
+<div class="pagina" id="pg-jogadores">
+  <div class="caixa larga">
+    <h2>Quem está participando</h2>
+    <p class="dica">Atualiza sozinho. O <b>tamanho</b> vem do jogo: é o tamanho de verdade
+      do boneco na tela, não uma previsão. Zero = a pessoa não tem avatar agora
+      (o ciclo limpou a formação, ou ela ainda não comentou o nick).</p>
+    <div id="jogadores"><p class="vazio">Ninguém participou ainda.</p></div>
+  </div>
+</div>
+
+<!-- ══════════════════════ LOGS ══════════════════════ -->
+<div class="pagina" id="pg-logs">
+  <div class="caixa larga">
+    <h2>O que está acontecendo</h2>
+    <p class="dica">Comentários lidos, nicks detectados, avatares criados, presentes,
+      erros e conexões &mdash; da ponte e de dentro do jogo, na mesma lista.</p>
+    <div class="linha">
+      <label style="flex:none">Mostrar</label>
+      <select id="filtro_log" style="width:200px" onchange="desenharLogs()">
+        <option value="">tudo</option>
+        <option value="ok">só o que deu certo</option>
+        <option value="aviso">só avisos</option>
+        <option value="erro">só erros</option>
+      </select>
+      <button class="fraco mini" onclick="limparLogs()">Limpar a tela</button>
+    </div>
+    <div id="logs"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════ FORMAÇÃO E CÂMERA ══════════════════════ -->
+<div class="pagina" id="pg-avancado">
+  <div class="grade">
+
+    <div class="caixa">
+      <h2>Formação</h2>
+      <div class="linha"><label>Avatares antes de recomeçar</label><input type="number" id="g_total" min="4" max="400"></div>
+      <div class="linha"><label>Bonecos por fileira</label><input type="number" id="g_fila" min="2" max="20"></div>
+      <div class="linha"><label>Máximo de bonecos por combo</label><input type="number" id="g_combo" min="1" max="300"></div>
+      <p class="dica" style="margin-top:14px">Mudar &ldquo;por fileira&rdquo; fecha o ciclo na hora: a
+        câmera abre, a formação é limpa, e a próxima já nasce com a régua nova.</p>
+    </div>
+
+    <div class="caixa">
+      <h2>O que o presente faz</h2>
+      <div class="linha">
+        <label style="flex:none">Ao receber um presente</label>
+        <select id="g_presente_faz" style="width:auto;flex:1">
+          <option value="novo">Aparecer um personagem NOVO</option>
+          <option value="crescer">Fazer crescer o boneco que a pessoa já tem</option>
+          <option value="ambos">As duas coisas: nasce um novo E o dela cresce</option>
+        </select>
+      </div>
+      <p class="dica" style="margin-top:12px"><b>Personagem novo</b> é o padrão: presente
+        põe alguma coisa nova na tela, e quem pagou vê na hora que funcionou.
+        <b>Crescer</b> premia quem gasta mais &mdash; o boneco dela vai ficando maior a
+        cada presente.</p>
+      <div id="ajustes_crescimento">
+        <div class="linha"><label>Tamanho máximo do avatar</label><input type="number" id="g_tamanho_max" min="1" max="12" step="0.5"></div>
+        <div class="linha"><label>Duração da animação (s)</label><input type="number" id="g_suave" min="0" max="5" step="0.1"></div>
+        <p class="dica">No teto o presente não é ignorado: ele passa a criar um boneco
+          novo pra pessoa, em vez de não fazer nada.</p>
+      </div>
+    </div>
+
+    <div class="caixa">
+      <h2>Câmera</h2>
+      <p class="dica">A câmera calcula o enquadramento sozinha pra o <b>telão</b> e o
+        <b>avatar</b> caberem os dois. Estes valores são o ponto de partida dela.</p>
+      <div class="linha">
+        <label>Vídeo em pé (9:16) <span style="display:block;font-size:12px">TikTok Live / OBS em retrato</span></label>
+        <input type="checkbox" id="g_vertical">
+      </div>
+      <div class="linha"><label>Distância de quem ela segue</label><input type="number" id="g_distancia" min="22" max="120"></div>
+      <div class="linha"><label>Altura da câmera</label><input type="number" id="g_altura" min="4" max="90"></div>
+      <div class="linha"><label>Abertura da lente (FOV)</label><input type="number" id="g_fov" min="30" max="110"></div>
+      <div class="linha"><label>Recuo no plano geral</label><input type="number" id="g_recuo" min="10" max="200"></div>
+      <p class="dica" style="margin-top:14px">Se a distância for pequena demais pra caber o
+        telão, a câmera se afasta sozinha até caber. Ela nunca chega mais perto do que
+        você pediu.</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="rodape">
+  <button onclick="salvar()">Salvar ajustes</button>
+  <button class="fraco" onclick="restaurar()">Descartar mudanças</button>
+  <span class="recado" id="recado"></span>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+//  A configuracao que esta' na tela.
+//
+//  Sempre um objeto COMPLETO: salvar um pedaco parcial faria o servidor
+//  mesclar por cima e o resultado dependeria de qual aba salvou por ultimo.
+// ═══════════════════════════════════════════════════════════════
+let cfg = null;
+
+// O catalogo, agrupado pra edicao. Um item por PRESENTE (e nao por apelido).
+// Ver `agruparPresentes`.
+let grupos = [];
+
+const NOMES_ACAO = {
+  comentario:   "Comentou o nick",
+  curtida:      "Curtiu",
+  seguiu:       "Seguiu você",
+  compartilhou: "Compartilhou a live",
+};
+
+// Os campos extras que so' presente usa.
+const EXTRAS_PRESENTE = [
+  ["chuva", "Chuva de avatares (s)", 0, 60, 1],
+  ["furacao", "Derruba todo mundo (s)", 0, 20, 1],
+  ["colosso", "Colosso (0 = normal)", 0, 40, 1],
+  ["danca_geral", "Troca a dança de todos (s)", 0, 120, 1],
+];
+
+// O PASSO que o avatar deste presente vai dançar, sozinho, no meio da formação.
+//
+// A lista e' fechada e nao um campo de texto de proposito: o valor da esquerda
+// precisa existir dos DOIS lados -- em DANCAS_VALIDAS (ponte/regras.py) e em
+// DANCAS (roblox/.../Config.luau). Um nome digitado errado nao daria erro em
+// lugar nenhum: o Roblox aceita uma animacao que nao existe, o Play() funciona,
+// e o boneco fica PARADO EM PE' no meio de todo mundo dançando.
+const DANCAS = [
+  ["",          "Padrão (a mesma de quem comenta)"],
+  ["rosquinha", "Dança da rosquinha"],
+  ["oculos",    "Dança do óculos"],
+  ["galaxia",   "Dança da galáxia"],
+  ["festa",     "Dança de festa (sobrando, pra você usar)"],
+];
+
+// Um presente novo nasce com isto. Valores de um presente "medio": visivel,
+// sem cinematica, sem efeito caro.
+const PRESENTE_NOVO = {
+  prio: 3, escala: 1.8, crescimento: 0.3, segura: 2.0, cena: 0,
+  cor: "FF2D6F", brilho: 2, chuva: 0, furacao: 0, colosso: 0,
+  danca_geral: 0, danca: "",
+};
+
+function hex(c) { return "#" + String(c || "FFFFFF").replace("#", ""); }
+function semHash(c) { return String(c || "").replace("#", "").toUpperCase(); }
+function escapar(t) {
+  return String(t == null ? "" : t).replace(/[&<>"']/g,
+    c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+// ═══════════════════════ ABAS ═══════════════════════
+
+for (const bt of document.querySelectorAll(".abas button")) {
+  bt.onclick = () => {
+    for (const outro of document.querySelectorAll(".abas button")) {
+      outro.classList.toggle("ativa", outro === bt);
+    }
+    for (const pg of document.querySelectorAll(".pagina")) {
+      pg.classList.toggle("ativa", pg.id === "pg-" + bt.dataset.pagina);
+    }
+  };
+}
+
+// ═══════════════════════ CAMPOS DE EFEITO ═══════════════════════
+
+function campos(prefixo, efeito, extras, comDanca, comCrescimento) {
+  // Os nomes batem com os campos do efeito no servidor. Mantenha assim: é o
+  // que deixa ler e gravar sem tabela de tradução no meio.
+  //
+  // "Segundos na tela" não está aqui de propósito: ninguém sai sozinho. A
+  // formação inteira vive até o ciclo fechar e some de uma vez -- é o que
+  // mantém a fila enfileirada, sem buraco no meio. Quem manda no tempo é o
+  // campo "Avatares antes de recomeçar", na aba Formação.
+  const linhas = [
+    ["escala", "Tamanho ao nascer", 0.5, 4, 0.1],
+  ];
+
+  // O CRESCIMENTO SÓ APARECE ONDE ELE FUNCIONA.
+  //
+  // Só presente faz avatar crescer (ver `aplicar` no Principal.server.luau):
+  // comentário, curtida, seguir e compartilhar sempre criam um boneco novo.
+  // Mostrar o campo nas ações seria um controle que aceita o número, salva o
+  // número, e não muda nada na live -- o pior tipo de ajuste que um painel
+  // pode ter, porque ele parece funcionar.
+  if (comCrescimento) {
+    linhas.push(["crescimento", "Crescimento (soma)", 0, 3, 0.05]);
+  }
+
+  linhas.push(
+    ["segura", "Segura a câmera (s)", 0, 25, 0.5],
+    ["cena", "Cinemática (s)", 0, 25, 0.5],
+    ["prio", "Prioridade na fila", 0, 20, 1],
+    ["brilho", "Brilho (0-5)", 0, 5, 1]);
+  linhas.push(...(extras || []));
+
+  let html = '<div class="mini">';
+  for (const [chave, rotulo, min, max, passo] of linhas) {
+    const v = efeito[chave] !== undefined ? efeito[chave] : 0;
+    html += `<div><label>${rotulo}</label>
+      <input type="number" id="${prefixo}_${chave}" value="${v}"
+             min="${min}" max="${max}" step="${passo}"></div>`;
+  }
+  html += `<div><label>Cor</label>
+    <input type="color" id="${prefixo}_cor" value="${hex(efeito.cor)}"></div>`;
+
+  if (comDanca) {
+    const atual = String(efeito.danca || "");
+    // Ocupa a linha inteira: o rótulo de uma dança não cabe numa coluna de
+    // 120px, e cortado no meio ("Dança da rosq...") ele não serve pra escolher.
+    html += `<div style="grid-column:1/-1"><label>Dança deste presente</label>
+      <select id="${prefixo}_danca">` +
+      DANCAS.map(([valor, rotulo]) =>
+        `<option value="${valor}"${valor === atual ? " selected" : ""}>${rotulo}</option>`
+      ).join("") + `</select></div>`;
+  }
+  return html + "</div>";
+}
+
+function lerCampos(prefixo, efeito, extras) {
+  const chaves = ["escala", "crescimento", "vida", "segura", "cena", "prio", "brilho"]
+    .concat((extras || []).map(e => e[0]));
+  for (const chave of chaves) {
+    const el = document.getElementById(`${prefixo}_${chave}`);
+    if (el) efeito[chave] = parseFloat(el.value) || 0;
+  }
+  const cor = document.getElementById(`${prefixo}_cor`);
+  if (cor) efeito.cor = semHash(cor.value);
+  // A dança é texto, e não número: não pode passar pelo laço acima, senão o
+  // parseFloat transformaria "galaxia" em 0 e a dança sumiria toda vez que
+  // você salvasse.
+  const danca = document.getElementById(`${prefixo}_danca`);
+  if (danca) efeito.danca = danca.value;
+  return efeito;
+}
+
+// ═══════════════════════ O CATÁLOGO DE PRESENTES ═══════════════════════
+//
+// No servidor o catálogo é {apelido: efeito} -- o mesmo presente aparece sob
+// todos os apelidos dele, porque a API do TikTok manda o nome em inglês e ele
+// muda de região pra região.
+//
+// Pra EDITAR, isso é péssimo: você veria "rose" e "rosa" como dois presentes
+// diferentes e teria que lembrar de mexer nos dois. Aqui o painel agrupa pelo
+// campo `grupo` e mostra uma ficha só; na hora de salvar, desagrupa de volta.
+
+function agruparPresentes() {
+  const porGrupo = new Map();
+  for (const [apelido, efeito] of Object.entries(cfg.presentes || {})) {
+    if (!efeito || typeof efeito !== "object") continue;
+    const chave = efeito.grupo || apelido;
+    if (!porGrupo.has(chave)) {
+      porGrupo.set(chave, {
+        chave,
+        rotulo: efeito.rotulo || apelido,
+        emoji: efeito.emoji || "\u{1F381}",
+        id: String(efeito.id || ""),
+        moedas: Number(efeito.moedas || 0),
+        apelidos: Array.isArray(efeito.apelidos) && efeito.apelidos.length
+          ? efeito.apelidos.slice() : [],
+        efeito: Object.assign({}, efeito),
+        ativo: true,
+      });
+    }
+    const g = porGrupo.get(chave);
+    if (!g.apelidos.includes(apelido)) g.apelidos.push(apelido);
+  }
+  grupos = [...porGrupo.values()];
+}
+
+function desenharPresentes() {
+  if (!grupos.length) {
+    document.getElementById("presentes").innerHTML =
+      '<p class="vazio">Nenhum presente cadastrado. Todo presente vai cair nas ' +
+      'faixas de preço, ali embaixo &mdash; o que já funciona. Cadastre aqui só ' +
+      'os que você quer controlar um a um.</p>';
+    desenharBotoesTeste();
+    return;
+  }
+
+  let html = "";
+  grupos.forEach((g, i) => {
+    html += `<div class="faixa">
+      <div class="titulo">
+        <input type="checkbox" id="pr${i}_ativo" ${g.ativo ? "checked" : ""}
+               onchange="alternarPresente(${i})">
+        <span class="ponto" style="background:${hex(g.efeito.cor)}"></span>
+        <span>${escapar(g.emoji)}</span>
+        <input type="text" id="pr${i}_rotulo" class="medio" value="${escapar(g.rotulo)}"
+               title="Nome que aparece aqui no painel">
+        <span style="color:var(--fraco);font-size:12px">ID do TikTok</span>
+        <input type="text" id="pr${i}_id" style="width:110px" value="${escapar(g.id)}"
+               placeholder="(opcional)" title="Vence o nome. Veja na aba Logs.">
+        <span style="color:var(--fraco);font-size:12px">~moedas</span>
+        <input type="number" id="pr${i}_moedas" style="width:80px" min="0" value="${g.moedas}">
+        <button class="fraco mini" style="margin-left:auto"
+                onclick="testarPresente(${i})">Testar</button>
+        <button class="perigo mini" onclick="removerPresente(${i})">Remover</button>
+      </div>
+      <div id="pr${i}_corpo" style="${g.ativo ? "" : "opacity:.35;pointer-events:none"}">
+        <div class="linha" style="margin-bottom:8px">
+          <label style="flex:none;font-size:12px">Nomes que o TikTok pode mandar</label>
+          <input type="text" id="pr${i}_apelidos" class="largo"
+                 value="${escapar(g.apelidos.join(", "))}"
+                 placeholder="rose, rosa"
+                 title="Separe por vírgula. Minúsculas. O mesmo presente chega com nome diferente em cada região.">
+        </div>
+        ${campos("pr" + i, g.efeito, EXTRAS_PRESENTE, true, true)}
+      </div>
+    </div>`;
+  });
+  document.getElementById("presentes").innerHTML = html;
+  desenharBotoesTeste();
+}
+
+// Liga/desliga sem redesenhar tudo: redesenhar aqui perderia o que você acabou
+// de digitar nos outros presentes.
+function alternarPresente(i) {
+  const ligado = document.getElementById(`pr${i}_ativo`).checked;
+  grupos[i].ativo = ligado;
+  const corpo = document.getElementById(`pr${i}_corpo`);
+  corpo.style.opacity = ligado ? "" : ".35";
+  corpo.style.pointerEvents = ligado ? "" : "none";
+}
+
+function removerPresente(i) {
+  // Lê antes de mexer na lista: sem isto, o que você digitou nos OUTROS
+  // presentes seria perdido no redesenho.
+  colherPresentes();
+  grupos.splice(i, 1);
+  desenharPresentes();
+  recado("Presente removido. Clique em Salvar pra valer na live.", "var(--aviso)");
+}
+
+function novoPresente(dados) {
+  colherPresentes();
+  const d = dados || {};
+  const base = (d.nome || "presente" + (grupos.length + 1))
+    .toLowerCase().replace(/[^a-z0-9]+/g, "");
+  grupos.push({
+    chave: base || "presente" + (grupos.length + 1),
+    rotulo: d.nome || "Presente novo",
+    emoji: "\u{1F381}",
+    id: String(d.id || ""),
+    moedas: Number(d.moedas || 0),
+    apelidos: d.nome ? [String(d.nome).toLowerCase()] : [],
+    efeito: Object.assign({}, PRESENTE_NOVO),
+    ativo: true,
+  });
+  desenharPresentes();
+  document.querySelector('[data-pagina="presentes"]').click();
+  recado("Presente adicionado. Ajuste e clique em Salvar.");
+}
+
+function colherPresentes() {
+  grupos.forEach((g, i) => {
+    const rot = document.getElementById(`pr${i}_rotulo`);
+    if (!rot) return;                       // ainda não desenhado
+    g.rotulo = rot.value.trim() || g.rotulo;
+    g.id = (document.getElementById(`pr${i}_id`).value || "").trim();
+    g.moedas = parseInt(document.getElementById(`pr${i}_moedas`).value) || 0;
+    g.ativo = document.getElementById(`pr${i}_ativo`).checked;
+    g.apelidos = (document.getElementById(`pr${i}_apelidos`).value || "")
+      .split(",").map(s => s.trim().toLowerCase()).filter(Boolean);
+    lerCampos("pr" + i, g.efeito, EXTRAS_PRESENTE);
+  });
+}
+
+function testarPresente(i) {
+  colherPresentes();
+  const g = grupos[i];
+  // Manda o PRIMEIRO apelido (o nome que o TikTok usa) pra o teste passar pelo
+  // mesmo caminho de um presente de verdade.
+  testar(g.apelidos[0] || g.rotulo, g.moedas || 1, 1);
+}
+
+function desenharBotoesTeste() {
+  const el = document.getElementById("botoes_teste");
+  if (!grupos.length) { el.innerHTML = '<span class="dica">Cadastre um presente pra testar.</span>'; return; }
+  el.innerHTML = grupos.map((g, i) =>
+    `<button class="fraco" onclick="testarPresente(${i})">${escapar(g.emoji)} ${escapar(g.rotulo)} (${g.moedas})</button>`
+  ).join("");
+}
+
+// ═══════════════════════ DESENHO GERAL ═══════════════════════
+
+function desenhar() {
+  // Faixas de preço
+  let html = "";
+  cfg.faixas.forEach((f, i) => {
+    html += `<div class="faixa">
+      <div class="titulo">
+        <span class="ponto" style="background:${hex(f.efeito.cor)}"></span>
+        A partir de
+        <input type="number" id="fx${i}_min" value="${f.min}" min="0" style="width:80px">
+        moedas
+      </div>
+      ${campos("fx" + i, f.efeito, EXTRAS_PRESENTE, true, true)}
+    </div>`;
+  });
+  document.getElementById("faixas").innerHTML = html;
+
+  // Ações
+  html = "";
+  for (const chave of Object.keys(NOMES_ACAO)) {
+    const a = cfg.acoes[chave];
+    if (!a) continue;
+    const extras = chave === "curtida"
+      ? [["a_cada", "Um avatar a cada N curtidas", 1, 100000, 1]] : [];
+    html += `<div class="faixa">
+      <div class="titulo">
+        <input type="checkbox" id="ac_${chave}_ativo" ${a.ativo !== false ? "checked" : ""}>
+        <span class="ponto" style="background:${hex(a.cor)}"></span>
+        ${NOMES_ACAO[chave]}
+      </div>
+      ${campos("ac_" + chave, a, extras)}
+    </div>`;
+  }
+  document.getElementById("acoes").innerHTML = html;
+
+  agruparPresentes();
+  desenharPresentes();
+
+  const g = cfg.geral;
+  document.getElementById("g_total").value       = g.total_avatares;
+  document.getElementById("g_fila").value        = g.por_fila;
+  document.getElementById("g_combo").value       = g.combo_max;
+  document.getElementById("g_recuo").value       = g.camera_recuo;
+  document.getElementById("g_tamanho_max").value = g.tamanho_max;
+  document.getElementById("g_suave").value       = g.crescimento_suave;
+  document.getElementById("g_presente_faz").value = g.presente_faz || "novo";
+  document.getElementById("g_vertical").checked  = !!g.vertical;
+  mostrarAjustesDeCrescimento();
+  document.getElementById("g_fov").value         = g.camera_fov;
+  document.getElementById("g_distancia").value   = g.camera_distancia;
+  document.getElementById("g_altura").value      = g.camera_altura;
+}
+
+function coletar() {
+  colherPresentes();
+
+  // PRESENTES -- montado do ZERO a cada salvada, e não editado por cima.
+  //
+  // É o que faz DESLIGAR e REMOVER funcionarem: um presente desligado
+  // simplesmente não entra no objeto novo, e o servidor substitui a seção
+  // inteira em vez de mesclar. Editando por cima, "desligado" nunca chegaria a
+  // virar remoção e o gatilho antigo continuaria valendo pra sempre.
+  cfg.presentes = {};
+  for (const g of grupos) {
+    if (!g.ativo) continue;
+    for (const apelido of g.apelidos) {
+      cfg.presentes[apelido] = Object.assign({}, g.efeito, {
+        grupo: g.chave,
+        rotulo: g.rotulo,
+        emoji: g.emoji,
+        id: g.id,
+        moedas: g.moedas,
+        apelidos: g.apelidos.slice(),
+      });
+    }
+  }
+
+  cfg.faixas.forEach((f, i) => {
+    f.min = parseFloat(document.getElementById(`fx${i}_min`).value) || 0;
+    lerCampos("fx" + i, f.efeito, EXTRAS_PRESENTE);
+  });
+  // Da mais cara pra mais barata: a ponte pega a PRIMEIRA faixa que couber, e
+  // fora de ordem um presente de 1000 cairia na faixa de 1 moeda.
+  cfg.faixas.sort((a, b) => b.min - a.min);
+
+  for (const chave of Object.keys(NOMES_ACAO)) {
+    const a = cfg.acoes[chave];
+    if (!a) continue;
+    const extras = chave === "curtida" ? [["a_cada", 0]] : [];
+    lerCampos("ac_" + chave, a, extras);
+    a.ativo = document.getElementById(`ac_${chave}_ativo`).checked;
+  }
+
+  const n = (id, padrao) => parseFloat(document.getElementById(id).value) || padrao;
+  cfg.geral.total_avatares = parseInt(document.getElementById("g_total").value) || 100;
+  cfg.geral.por_fila       = parseInt(document.getElementById("g_fila").value) || 10;
+  cfg.geral.combo_max      = parseInt(document.getElementById("g_combo").value) || 100;
+  cfg.geral.camera_recuo   = n("g_recuo", 34);
+  cfg.geral.tamanho_max    = n("g_tamanho_max", 6);
+  cfg.geral.crescimento_suave = n("g_suave", 0.6);
+  cfg.geral.presente_faz   = document.getElementById("g_presente_faz").value;
+  cfg.geral.vertical       = document.getElementById("g_vertical").checked;
+  cfg.geral.camera_fov     = n("g_fov", 62);
+  cfg.geral.camera_distancia = n("g_distancia", 38);
+  cfg.geral.camera_altura  = n("g_altura", 19);
+
+  // A conexão NÃO entra aqui: ela é salva na hora do clique, pela rota
+  // /controle, que é quem faz a revisão subir. Mandar junto no /ajustes
+  // reescreveria o estado com o que estava na tela quando a página carregou --
+  // e um "Salvar ajustes" desconectaria a live sem ninguém pedir.
+  delete cfg.tiktok;
+}
+
+function recado(texto, cor) {
+  const el = document.getElementById("recado");
+  el.textContent = texto;
+  el.style.color = cor || "var(--ok)";
+  setTimeout(() => { el.textContent = ""; }, 4000);
+}
+
+async function carregar() {
+  const r = await fetch("/ajustes");
+  cfg = await r.json();
+  desenhar();
+}
+
+async function salvar() {
+  coletar();
+  await fetch("/ajustes", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(cfg),
+  });
+  // Recarrega do servidor em vez de só redesenhar: as faixas voltam já
+  // reordenadas e os presentes já normalizados, então o que você vê passa a
+  // ser o que está gravado -- e não o que você digitou.
+  await carregar();
+  recado("Salvo. Vale na live em até 5 segundos.");
+}
+
+async function restaurar() {
+  await carregar();
+  recado("Mudanças descartadas.", "var(--aviso)");
+}
+
+// ═══════════════════════ CONEXÃO ═══════════════════════
+
+async function conectar(ligado) {
+  const conta = document.getElementById("tk_conta").value.trim().replace(/^@/, "");
+  if (ligado && !conta) {
+    document.getElementById("tk_detalhe").textContent = "Digite o seu @ do TikTok primeiro.";
+    document.getElementById("tk_detalhe").style.color = "var(--aviso)";
+    return;
+  }
+  document.getElementById("bt_conectar").disabled = true;
+  document.getElementById("bt_desconectar").disabled = true;
+  try {
+    await fetch("/controle", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ conta, ligado }),
+    });
+    recado(ligado ? "Conectando..." : "Desconectando...");
+  } catch (e) {
+    recado("O servidor da live não respondeu.", "var(--erro)");
+  }
+  setTimeout(() => {
+    document.getElementById("bt_conectar").disabled = false;
+    document.getElementById("bt_desconectar").disabled = false;
+  }, 1200);
+}
+
+const CRACHA = {
+  conectada:  ["c-ok", "CONECTADA"],
+  conectando: ["c-aviso", "CONECTANDO..."],
+  offline:    ["c-aviso", "A CONTA NÃO ESTÁ AO VIVO"],
+  erro:       ["c-erro", "ERRO"],
+  parada:     ["c-neutro", "DESCONECTADA"],
+};
+
+// A conta digitada só é sobrescrita enquanto você NÃO está mexendo no campo.
+// Sem isto, o laço de 2s apagaria as letras no meio da digitação.
+let mexendoNaConta = false;
+document.getElementById("tk_conta").addEventListener("focus", () => mexendoNaConta = true);
+document.getElementById("tk_conta").addEventListener("blur", () => mexendoNaConta = false);
+
+function desenharConexao(e) {
+  const c = e.conexao || {};
+  let estado = c.estado || "parada";
+  let detalhe = c.detalhe || "";
+
+  // A PONTE MORREU? Isso não é a mesma coisa que "desconectada", e confundir
+  // as duas é o erro mais caro deste painel: a janela preta da ponte fechou, o
+  // último estado que ela publicou ficou congelado dizendo CONECTADA, e você
+  // fica olhando um jogo parado achando que o problema é o Roblox.
+  if (e.conexao_ha !== null && e.conexao_ha > 12) {
+    estado = "erro";
+    detalhe = "A ponte parou de responder há " + Math.round(e.conexao_ha) +
+      "s. A janela preta \"2 - PONTE DO TIKTOK\" fechou? Rode o INICIAR-LIVE.bat de novo.";
+  }
+
+  const [classe, rotulo] = CRACHA[estado] || CRACHA.parada;
+  document.getElementById("tk_estado").innerHTML =
+    `<span class="cracha ${classe}">${rotulo}</span>` +
+    (c.conta ? ` <b>@${escapar(c.conta)}</b>` : "");
+  const el = document.getElementById("tk_detalhe");
+  el.textContent = detalhe;
+  el.style.color = estado === "erro" ? "var(--erro)" : "var(--fraco)";
+}
+
+// ═══════════════════════ ESTADO E LUZES ═══════════════════════
+
+function luz(segundos) {
+  if (segundos === null || segundos === undefined) return "#ef4444";
+  if (segundos < 5) return "var(--ok)";
+  if (segundos < 30) return "var(--aviso)";
+  return "#ef4444";
+}
+
+async function atualizarEstado() {
+  let e;
+  try {
+    e = await (await fetch("/estado")).json();
+  } catch (err) {
+    document.getElementById("estado").innerHTML =
+      '<span style="color:var(--erro)">O servidor da live não está respondendo. ' +
+      'A janela preta "1 - SERVIDOR DA LIVE" fechou?</span>';
+    return;
+  }
+  document.getElementById("estado").innerHTML = `
+    <span><span class="luz" style="background:${luz(e.ponte_ha)}"></span>
+      Ponte do TikTok: <b>${e.ponte_ha === null ? "nunca falou" : "há " + e.ponte_ha + "s"}</b></span>
+    <span><span class="luz" style="background:${luz(e.jogo_ha)}"></span>
+      Roblox Studio: <b>${e.jogo_ha === null ? "não conectou" : "há " + e.jogo_ha + "s"}</b></span>
+    <span>Eventos recebidos: <b>${e.recebidos}</b></span>
+    <span>Entregues ao jogo: <b>${e.entregues}</b></span>`;
+
+  desenharConexao(e);
+
+  if (!mexendoNaConta && e.conexao && e.conexao.conta &&
+      !document.getElementById("tk_conta").value) {
+    document.getElementById("tk_conta").value = e.conexao.conta;
+  }
+}
+
+// ═══════════════════════ JOGADORES ═══════════════════════
+
+function quando(ts) {
+  if (!ts) return "-";
+  const s = Math.round(Date.now() / 1000 - ts);
+  if (s < 60) return s + "s atrás";
+  if (s < 3600) return Math.round(s / 60) + "min atrás";
+  return Math.round(s / 3600) + "h atrás";
+}
+
+async function atualizarJogadores() {
+  let lista;
+  try {
+    lista = (await (await fetch("/jogadores")).json()).lista || [];
+  } catch (e) { return; }
+
+  const el = document.getElementById("jogadores");
+  if (!lista.length) {
+    el.innerHTML = '<p class="vazio">Ninguém participou ainda.</p>';
+    return;
+  }
+  el.innerHTML = `<table>
+    <tr><th>TikTok</th><th>Nick do Roblox</th><th>Avatar</th>
+        <th class="num">Tamanho</th><th class="num">Presentes</th>
+        <th class="num">Moedas</th><th>Última interação</th></tr>` +
+    lista.map(j => {
+      const naTela = j.avatares > 0;
+      return `<tr>
+        <td>${escapar(j.nickname || j.tiktok_id)}</td>
+        <td>${j.nick_roblox ? escapar(j.nick_roblox) : '<span style="color:var(--fraco)">—</span>'}</td>
+        <td>${naTela
+          ? `<span class="cracha c-ok">na tela (${j.avatares})</span>`
+          : '<span class="cracha c-neutro">fora</span>'}</td>
+        <td class="num">${naTela ? j.tamanho.toFixed(2) + "x" : "—"}</td>
+        <td class="num">${j.presentes}</td>
+        <td class="num">${j.moedas}</td>
+        <td>${quando(j.ultima)}</td>
+      </tr>`;
+    }).join("") + "</table>";
+}
+
+// ═══════════════════════ PRESENTES VISTOS ═══════════════════════
+
+async function atualizarVistos() {
+  let lista;
+  try {
+    lista = (await (await fetch("/presentes-vistos")).json()).lista || [];
+  } catch (e) { return; }
+
+  const el = document.getElementById("vistos");
+  if (!lista.length) {
+    el.innerHTML = '<p class="vazio">Nenhum presente chegou ainda nesta sessão.</p>';
+    return;
+  }
+  el.innerHTML = `<table>
+    <tr><th>Presente</th><th>ID do TikTok</th><th class="num">Moedas</th>
+        <th class="num">Vezes</th><th></th></tr>` +
+    lista.map(p => {
+      const ja = grupos.some(g => g.id === p.id ||
+        g.apelidos.includes(String(p.nome || "").toLowerCase()));
+      return `<tr>
+        <td>${escapar(p.nome || "(sem nome)")}</td>
+        <td><code>${escapar(p.id)}</code></td>
+        <td class="num">${p.moedas}</td>
+        <td class="num">${p.vezes}</td>
+        <td>${ja ? '<span class="cracha c-ok">cadastrado</span>'
+          : `<button class="fraco mini" onclick='novoPresente(${
+              JSON.stringify({ nome: p.nome, id: p.id, moedas: p.moedas })
+                .replace(/'/g, "&#39;")})'>Cadastrar</button>`}</td>
+      </tr>`;
+    }).join("") + "</table>";
+}
+
+// ═══════════════════════ LOGS ═══════════════════════
+
+let cursorLog = -1;
+let linhasLog = [];
+
+async function atualizarLogs() {
+  let d;
+  try {
+    d = await (await fetch("/logs?desde=" + cursorLog)).json();
+  } catch (e) { return; }
+  if (!d.lista || !d.lista.length) { cursorLog = d.seq; return; }
+  cursorLog = d.seq;
+  linhasLog = linhasLog.concat(d.lista);
+  // Teto na MEMÓRIA do navegador. Uma live de seis horas gera dezenas de
+  // milhares de linhas, e o painel fica aberto o tempo todo: sem teto, a aba
+  // vai engordando até travar -- justamente no fim da live.
+  if (linhasLog.length > 600) linhasLog = linhasLog.slice(-600);
+  desenharLogs();
+}
+
+function desenharLogs() {
+  const filtro = document.getElementById("filtro_log").value;
+  const el = document.getElementById("logs");
+  // Só rola sozinho se você já estava no fim. Sem isto, ler uma linha de
+  // quinze segundos atrás é impossível: a cada segundo a tela pula pro fim.
+  const grudado = el.scrollTop + el.clientHeight >= el.scrollHeight - 30;
+
+  const mostrar = filtro ? linhasLog.filter(l => l.nivel === filtro) : linhasLog;
+  el.innerHTML = mostrar.map(l => {
+    const h = new Date(l.quando * 1000).toLocaleTimeString("pt-BR");
+    return `<div class="n-${l.nivel}"><span class="hora">${h}</span> ` +
+      `<span class="origem">[${escapar(l.origem)}]</span> ${escapar(l.texto)}</div>`;
+  }).join("");
+
+  if (grudado) el.scrollTop = el.scrollHeight;
+}
+
+function limparLogs() {
+  linhasLog = [];
+  desenharLogs();
+}
+
+// ═══════════════════════ TESTAR ═══════════════════════
+
+async function testar(presente, moedas, vezes, tipo) {
+  const nick = document.getElementById("t_nick").value.trim();
+  const aviso = document.getElementById("t_recado");
+  if (!nick) {
+    aviso.textContent = "Informe um nick do Roblox primeiro (na aba Conexão).";
+    aviso.style.color = "var(--aviso)";
+    document.querySelector('[data-pagina="conexao"]').click();
+    return;
+  }
+  aviso.textContent = "Conferindo o nick...";
+  aviso.style.color = "var(--fraco)";
+
+  // Confere o nick ANTES de enfileirar. Sem isto, um nick errado vira um teste
+  // que simplesmente não acontece, e você fica olhando o jogo parado sem saber
+  // se o problema é o nick, a ponte ou o jogo.
+  const conf = await fetch("/nick?nome=" + encodeURIComponent(nick));
+  if (!conf.ok) {
+    aviso.textContent = `O nick "${nick}" não existe no Roblox.`;
+    aviso.style.color = "var(--aviso)";
+    return;
+  }
+
+  await fetch("/testar", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ presente, moedas, vezes, nick, tipo: tipo || "presente" }),
+  });
+  aviso.textContent = "Mandado. Deve aparecer no jogo em 1 ou 2 segundos.";
+  aviso.style.color = "var(--ok)";
+}
+
+// ═══════════════════════ SUBIDA ═══════════════════════
+
+carregar();
+atualizarEstado();
+atualizarLogs();
+atualizarJogadores();
+atualizarVistos();
+
+setInterval(atualizarEstado, 2000);
+setInterval(atualizarLogs, 1000);
+setInterval(atualizarJogadores, 3000);
+setInterval(atualizarVistos, 5000);
+</script>
+</body>
+</html>
