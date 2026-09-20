@@ -1,0 +1,234 @@
+====================================================================
+  LIVE INTERATIVA - TikTok + Roblox
+  por NexivoLive
+
+  COMECE POR AQUI
+====================================================================
+
+O espectador comenta o nick dele do Roblox.
+O boneco dele aparece na sua live, com a skin de verdade, dancando.
+Presente caro entra maior, brilhando e dancando um passo diferente.
+
+Sao 4 passos. Leva de 10 a 20 minutos na primeira vez, e depois
+disso e' um clique duplo pra subir a live.
+
+Nao precisa saber programar. Nao precisa criar conta em lugar
+nenhum. Nao precisa pagar mensalidade de servidor: tudo roda na
+sua propria maquina.
+
+
+--------------------------------------------------------------------
+  ANTES DE COMECAR - O QUE VOCE PRECISA TER
+--------------------------------------------------------------------
+
+  [ ] Um PC com Windows 10 ou 11
+  [ ] Internet
+  [ ] Uma conta do TikTok que possa fazer LIVE
+  [ ] O OBS, se voce for transmitir (opcional pra testar)
+
+Nao serve celular, nao serve Mac, nao serve tablet. O jogo roda
+dentro do Roblox Studio, que so' existe pra computador.
+
+
+--------------------------------------------------------------------
+  ANTES DE TUDO - EXTRAIA O ZIP
+--------------------------------------------------------------------
+
+Se voce recebeu o kit num arquivo .zip, EXTRAIA ANTES de clicar
+em qualquer coisa:
+
+  1. Clique com o BOTAO DIREITO no arquivo .zip
+  2. Escolha "Extrair Tudo..."
+  3. Confirme, e abra a pasta que aparecer
+
+ISTO NAO E' DETALHE. O Windows deixa voce abrir o ZIP e ver os
+arquivos la' dentro, e da' pra clicar neles -- mas quando voce da'
+dois cliques num .bat DE DENTRO do ZIP, o Windows copia SO' AQUELE
+arquivo pra uma pasta temporaria e roda de la'. O resto do kit fica
+pra tras.
+
+O sintoma disso e' a mensagem "O KIT ESTA INCOMPLETO" -- e ela nao
+tem nada a ver com o download ter vindo quebrado.
+
+A pasta certa e' a que tem o INSTALAR.bat E as pastas "servidor",
+"ponte" e "roblox" juntos.
+
+
+--------------------------------------------------------------------
+  PASSO 1 - INSTALAR O ROBLOX STUDIO
+--------------------------------------------------------------------
+
+E' onde o jogo roda. E' gratis.
+
+  1. Abra:  https://create.roblox.com/
+  2. Clique em "Start Creating" e faca login na sua conta Roblox.
+  3. Ele baixa o Roblox Studio sozinho. Instale e feche ele.
+
+Se voce ja' tem o Roblox normal instalado, o STUDIO e' outro
+programa -- precisa instalar do mesmo jeito.
+
+
+--------------------------------------------------------------------
+  PASSO 2 - RODAR O INSTALAR.bat
+--------------------------------------------------------------------
+
+Aqui nesta pasta, de dois cliques em:
+
+      INSTALAR.bat
+
+Vai abrir uma janela preta com quatro etapas. Leva de 1 a 5
+minutos. Deixe ela terminar sozinha.
+
+O PYTHON VEM JUNTO. O Python e' o programa que le' o chat da sua
+live. Se ele nao estiver no seu computador, o INSTALAR.bat avisa,
+pergunta se pode, e BAIXA E INSTALA SOZINHO -- direto do site
+oficial (python.org). A barrinha de progresso do Python aparece
+numa janela propria; deixe ela terminar.
+
+Voce nao precisa marcar caixinha nenhuma: a famosa "Add python.exe
+to PATH", que e' onde quase todo mundo tropeca, ja' vai marcada.
+
+Se aparecer aviso azul do Windows ("O Windows protegeu o seu PC"),
+clique em "Mais informacoes" e depois em "Executar assim mesmo".
+Isso aparece porque o arquivo nao tem assinatura paga -- e' normal
+em kit de criador independente.
+
+Quando terminar, ela diz "INSTALACAO CONCLUIDA".
+
+  SE O DOWNLOAD DO PYTHON NAO DER CERTO (internet caindo, antivirus
+  bloqueando, rede de escola ou empresa), a propria janela mostra o
+  passo manual: baixe em https://www.python.org/downloads/, marque
+  "Add python.exe to PATH" na primeira tela, e depois FECHE a janela
+  preta e rode o INSTALAR.bat de novo.
+
+  Fechar e reabrir nao e' frescura: o Windows so' mostra um programa
+  recem-instalado pras janelas abertas DEPOIS da instalacao.
+
+  IMPORTANTE: se o Roblox Studio estiver aberto, FECHE e abra de
+  novo depois desta etapa. O Studio so' carrega plugin novo quando
+  inicia.
+
+
+--------------------------------------------------------------------
+  PASSO 3 - TESTAR SEM LIVE (faca isto antes da primeira live!)
+--------------------------------------------------------------------
+
+De dois cliques em:
+
+      TESTAR.bat
+
+Ele inventa comentarios e presentes falsos pra voce ver o jogo
+funcionando. Vao abrir varias janelas -- e' assim mesmo:
+
+  - uma janela preta "1 - SERVIDOR DA LIVE"   (deixe aberta)
+  - uma janela preta "2 - PONTE (simulacao)"  (deixe aberta)
+  - uma janela preta "0 - Rojo"               (deixe aberta)
+  - o PAINEL, no seu navegador
+  - o Roblox Studio, com o jogo
+
+No Roblox Studio, aperte PLAY (o triangulo azul, no topo).
+
+Em alguns segundos os bonecos comecam a aparecer sozinhos,
+dancando. E' o jogo funcionando.
+
+Enquanto isso, mexa no PAINEL no navegador: mude os numeros de um
+presente, clique em "Salvar ajustes", e veja mudar no jogo em ate'
+5 segundos. E' assim que voce deixa a live do SEU jeito.
+
+Configure tudo aqui, com calma. Configurar no ar, com gente
+assistindo, e' o caminho mais rapido pra uma live ruim.
+
+Pra parar: feche as janelas pretas.
+
+
+--------------------------------------------------------------------
+  PASSO 4 - A LIVE DE VERDADE
+--------------------------------------------------------------------
+
+Abra a sua live no TikTok primeiro. Depois, de dois cliques em:
+
+      INICIAR-LIVE.bat
+
+Ele pergunta o seu @ do TikTok. Digite (com ou sem o @) e aperte
+Enter. Da proxima vez ele ja' lembra: e' so' apertar Enter.
+
+Abre tudo igual ao teste. No Studio, aperte PLAY.
+
+Agora peca no microfone:
+
+      "Comenta o seu nick do Roblox que voce aparece na tela!"
+
+So' quem comenta o PROPRIO nick do Roblox vira boneco. "oi", "kkkk"
+e "salve" nao viram nada -- de proposito.
+
+
+--------------------------------------------------------------------
+  BOTAR NO OBS
+--------------------------------------------------------------------
+
+A imagem do jogo: capture a janela do Roblox Studio.
+
+Os placares (opcional), como Fonte de Navegador:
+
+      http://localhost:8000/placar.html?tipo=moedas
+      http://localhost:8000/placar.html?tipo=curtidas
+      http://localhost:8000/placar.html?tipo=presenca
+
+Use "localhost", nunca "127.0.0.1" -- o navegador de dentro do OBS
+trata os dois como coisas diferentes, e metade dos casos de "a
+fonte fica preta" e' isso.
+
+O fundo ja' e' transparente: o quadro flutua por cima do jogo.
+
+
+--------------------------------------------------------------------
+  DEU ERRO? OS 6 MAIS COMUNS
+--------------------------------------------------------------------
+
+1) "O KIT ESTA INCOMPLETO"
+   Voce clicou no .bat de dentro do ZIP, sem extrair. Extraia o ZIP
+   inteiro (botao direito > "Extrair Tudo...") e rode da pasta que
+   aparecer. A propria janela preta diz qual dos casos e' o seu.
+
+2) "O PYTHON NAO FOI ENCONTRADO"
+   Rode o INSTALAR.bat -- ele baixa e instala o Python pra voce.
+   Se ja' rodou: FECHE todas as janelas pretas e abra de novo. O
+   Windows so' enxerga programa recem-instalado em janelas abertas
+   DEPOIS da instalacao.
+
+3) Nada aparece no jogo
+   Olhe o diagnostico no alto do PAINEL. Ele diz de que lado esta'
+   o problema, e isso corta o tempo de busca pela metade.
+
+4) "A PORTA 8000 JA ESTA OCUPADA"
+   Sobrou janela de uma sessao anterior. Feche TODAS as janelas
+   pretas e rode de novo. Se nao achar as janelas, reiniciar o PC
+   resolve.
+
+5) O chat anda mas ninguem aparece
+   Normal. So' vira boneco quem comenta o PROPRIO nick do Roblox.
+   A janela da ponte avisa isso a cada 30 segundos.
+
+6) Mexi no codigo e o jogo continua igual
+   FECHE o Roblox Studio inteiro e abra pelo ABRIR-JOGO.bat.
+   O Studio carrega o codigo UMA vez, quando abre o arquivo --
+   apertar Play de novo nao recarrega nada.
+
+Tem muito mais no LEIA-PRIMEIRO.md, aqui nesta pasta.
+
+
+--------------------------------------------------------------------
+  RESUMO PRA GUARDAR
+--------------------------------------------------------------------
+
+  Primeira vez  ->  INSTALAR.bat  (uma vez so')
+  Pra testar    ->  TESTAR.bat
+  Pra fazer live->  INICIAR-LIVE.bat
+  So' abrir o jogo -> ABRIR-JOGO.bat
+
+  Painel de controle: http://localhost:8000/painel
+
+Deixe as janelas pretas ABERTAS durante a live inteira. Se elas
+fecharem, nada mais aparece no jogo.
+
+Boa live.

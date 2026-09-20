@@ -1,0 +1,58 @@
+====================================================================
+  LIVE INTERATIVA - TikTok + Roblox
+  por NexivoLive
+
+  LICENCA PESSOAL - NAO COMPARTILHE
+====================================================================
+
+Licenciado para : ______________________________
+Pedido          : ______________________________
+Emitido em      : ____ / ____ / ________
+
+
+O QUE VOCE PODE FAZER
+  - Usar este kit nas suas lives, inclusive comercialmente, para sempre.
+  - Instalar nos seus proprios computadores.
+  - Modificar o kit para o seu proprio uso.
+  - Ficar com todo o dinheiro que voce ganhar usando ele.
+
+O QUE VOCE NAO PODE FAZER
+  - Revender, repassar, republicar ou dar este kit para outra pessoa.
+  - Publicar o codigo em repositorio publico.
+  - Vender um produto derivado deste kit.
+
+
+SUPORTE
+  NexivoLive - no canal que veio junto com a sua compra.
+
+  Ao pedir ajuda, mande sempre estas tres coisas:
+    1. o numero do seu pedido
+    2. um print da janela preta que deu erro
+    3. o que voce ja' tentou
+
+  Com isso a gente resolve na primeira resposta. Sem isso, a conversa
+  vira um jogo de adivinhacao e demora dias.
+
+
+DO QUE ESTE KIT DEPENDE, E QUE NAO ESTA SOB NOSSO CONTROLE
+  - A conexao com a live do TikTok passa por um servico externo de
+    assinatura, exigido pelo proprio TikTok. Ele fica instavel de vez
+    em quando, para TODOS os produtos que fazem isso -- nao e' um
+    defeito deste kit. Quando acontece, a ponte espera e reconecta
+    sozinha, e a janela explica o que esta' havendo.
+
+  - O jogo precisa rodar no Roblox Studio, em modo Play. O jogo
+    publicado roda na nuvem da Roblox e nao alcanca o seu computador.
+    Isso e' como a Roblox funciona, e nao ha' configuracao que mude.
+
+  - As APIs da Roblox e do TikTok podem mudar sem aviso.
+
+
+GARANTIA
+  O kit e' entregue funcionando. Se ele nao funcionar na sua maquina,
+  voce tem ____ dias para pedir reembolso.
+
+
+====================================================================
+  (c) NexivoLive. Todos os direitos reservados.
+====================================================================
