@@ -79,7 +79,7 @@ public partial class MainWindow : Window
 
             SetStatus("Baixando NexivoLive...");
             Directory.CreateDirectory(installDirectory);
-            var zipPath = Path.Combine(Path.GetTempPath(), $"NexivoLive-\${Guid.NewGuid():N}.zip");
+            var zipPath = Path.Combine(Path.GetTempPath(), "NexivoLive-" + Guid.NewGuid().ToString("N") + ".zip");
 
             using (var response = await Http.GetAsync(download.url, HttpCompletionOption.ResponseHeadersRead))
             {
@@ -183,7 +183,7 @@ public partial class MainWindow : Window
         Process.Start(new ProcessStartInfo
         {
             FileName = "explorer.exe",
-            Arguments = $"\${installDirectory}",
+            Arguments = "\"" + installDirectory + "\"",
             UseShellExecute = true
         });
     }
